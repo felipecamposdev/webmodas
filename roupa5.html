@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[ WEB MODAS ] Signature | Fashion Web Fusion</title>
+
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Cpath d='M24 4L41.3 14V34L24 44L6.7 34V14L24 4Z' fill='none' stroke='%23c27843' stroke-width='2'/%3E%3Crect x='17' y='17' width='14' height='14' rx='2' fill='%23b39359'/%3E%3C/svg%3E">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,700;1,400&family=Michroma&family=Inter:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        /* Nova Paleta: Cobre, Dourado e Seda */
+        :root {
+            --copper: #c27843;
+            --gold: #b39359;
+            --silk: #fcfaf7;
+            --dark-slate: #0f172a;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--silk);
+            color: var(--dark-slate);
+            scroll-behavior: smooth;
+        }
+
+        .font-tech {
+            font-family: 'Michroma', sans-serif;
+        }
+
+        .font-serif {
+            font-family: 'Cormorant Garamond', serif;
+        }
+
+        /* Glassmorphism refinado com bordas douradas sutis */
+        .premium-card {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(179, 147, 89, 0.2);
+            /* Borda dourada sutil */
+            box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.05);
+            border-radius: 1.5rem;
+            transition: all 0.4s ease;
+        }
+
+        /* Imagens com tratamento editorial */
+        .img-editorial {
+            border-radius: 0.5rem;
+            filter: contrast(1.05) saturate(0.95);
+            /* Toque de revista */
+            transition: all 0.5s ease;
+        }
+
+        .img-editorial:hover {
+            transform: scale(1.02);
+            filter: contrast(1.1) saturate(1);
+        }
+
+        /* Carrossel */
+        .carousel-item {
+            display: none;
+        }
+
+        .carousel-item.active {
+            display: block;
+            animation: fadeUp 0.8s ease-out;
+        }
+
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .btn-nav {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: white;
+            border-radius: 50%;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            color: var(--copper);
+            border: 1px solid var(--silk);
+        }
+
+        .video-editorial {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 1.5rem;
+            /* Geometria mais suave que a anterior */
+            clip-path: polygon(0 2%, 2% 0, 100% 0, 100% 98%, 98% 100%, 0 100%);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
+        }
+
+        .video-editorial iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .bg-dark-section {
+            background-color: var(--dark-slate);
+        }
+
+        /* Botão Gradiente Cobre */
+        .btn-copper {
+            background: linear-gradient(135deg, var(--copper), #a05e2b);
+            color: white;
+        }
+
+        .text-copper {
+            color: var(--copper);
+        }
+    </style>
+</head>
+
+<body class="min-h-screen">
+
+    <header class="bg-dark-section py-16 px-6 border-b border-copper/30 relative overflow-hidden">
+        <div
+            class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-copper/20 via-transparent to-transparent opacity-40">
+        </div>
+
+        <div class="relative z-10 max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-16">
+
+            <div class="md:w-1/3 flex flex-col items-center">
+                <div class="relative group">
+                    <div
+                        class="absolute -inset-1 bg-gradient-to-r from-copper to-gold rounded-full blur opacity-30 group-hover:opacity-60 transition duration-1000">
+                    </div>
+                    <div
+                        class="relative w-52 h-52 bg-slate-900 rounded-full flex flex-col items-center justify-center p-8 border border-white/10 shadow-2xl">
+                        <svg viewBox="0 0 100 100" class="w-24 h-24 mb-3">
+                            <path d="M50 10 L85 30 V70 L50 90 L15 70 V30 Z" fill="none" stroke="#c27843"
+                                stroke-width="1.5" />
+                            <path d="M50 25 L72 38 V62 L50 75 L28 38 V38 Z" fill="white" opacity="0.95" />
+                            <rect x="44" y="44" width="12" height="12" rx="1" fill="#b39359" />
+                        </svg>
+                        <span
+                            class="text-white font-tech text-[9px] tracking-[0.4em] uppercase text-gold">Signature</span>
+                    </div>
+                </div>
+                <h1 class="text-4xl font-serif italic text-white mt-8 tracking-wide">[ WEB MODAS ]</h1>
+            </div>
+
+            <div class="md:w-2/3 text-center md:text-left">
+                <h2 class="text-xs font-tech text-copper tracking-[0.5em] uppercase mb-4">A MODA DIGITAL</h2>
+                <p class="text-2xl md:text-2xl text-white font-serif italic leading-tight mb-8">
+                    Onde a precisão digital encontra a <span class="text-copper font-normal">alma da moda.</span>
+                </p>
+                <p
+                    class="text-slate-300 text-lg font-light mb-10 max-w-xl leading-relaxed border-l border-copper/50 pl-6">
+                    A <strong>[ WEB MODAS ] Signature</strong> redefine a experiência de vestir. Nossa curadoria funde a
+                    atemporalidade da alta costura com a inovação da era conectada, criando peças que são extensões da
+                    sua identidade.
+                </p>
+
+                <div class="flex flex-col sm:flex-row gap-6">
+                    <a href="https://wa.me/5511933924115?text=Olá, Gostaria de saber mais sobre a coleção 2026"
+                        target="_blank"
+                        class="flex-1 btn-copper font-bold py-5 px-8 rounded-full shadow-xl hover:shadow-copper/50 transition-all duration-500 flex items-center justify-center gap-3 tracking-widest text-xs uppercase">
+                        <i class="fab fa-whatsapp text-lg"></i> ENTRE EM CONTATO
+                    </a>
+                    <a href="https://www.google.com/maps/dir//Centro,+Piracaia+-+SP,+12970-000/@-23.0480556,-46.3621204,14z/data=!4m9!4m8!1m0!1m5!1m1!1s0x94cea3363199d857:0xbc562cec5d314d8!2m2!1d-46.3564707!2d-23.0538788!3e0?entry=ttu&g_ep=EgoyMDI2MDEyOC4wIKXMDSoASAFQAw%3D%3D"
+                        target="_blank"
+                        class="flex-1 border border-white/30 text-white font-bold py-5 px-8 rounded-full hover:bg-white/5 transition-all flex items-center justify-center gap-3 tracking-widest text-xs uppercase">
+                        <i class="fas fa-location-arrow text-lg"></i> ENCONTRE A NOSSA LOJA
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-6 py-20">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-16">
+
+            <div class="lg:col-span-4 space-y-12">
+                <h3 class="font-tech text-[10px] text-BLACK-400 tracking-[0.3em] uppercase mb-2">NOSSOS CONTATOS</h3>
+
+                <div class="space-y-5">
+                    <a href="google_bucas.html"
+                        class="flex items-center justify-between p-6 premium-card hover:border-copper/50 group transition-all duration-300">
+                        <div class="flex items-center gap-5">
+                            <i class="fab fa-instagram text-2xl text-copper"></i>
+                            <span
+                                class="font-bold text-xs uppercase tracking-widest text-slate-700 group-hover:text-copper">Instagram</span>
+                        </div>
+                        <i
+                            class="fas fa-arrow-right text-[10px] text-slate-300 group-hover:text-copper group-hover:translate-x-1 transition-all"></i>
+                    </a>
+
+                    <a href="google_bucas.html"
+                        class="flex items-center justify-between p-6 premium-card hover:border-copper/50 group transition-all duration-300">
+                        <div class="flex items-center gap-5">
+                            <i class="fab fa-facebook text-2xl text-copper"></i>
+                            <span
+                                class="font-bold text-xs uppercase tracking-widest text-slate-700 group-hover:text-copper">Facebook</span>
+                        </div>
+                        <i
+                            class="fas fa-arrow-right text-[10px] text-slate-300 group-hover:text-copper group-hover:translate-x-1 transition-all"></i>
+                    </a>
+
+                    <a href="google_bucas.html"
+                        class="flex items-center justify-between p-6 premium-card hover:border-copper/50 group transition-all duration-300">
+                        <div class="flex items-center gap-5">
+                            <i class="fab fa-youtube text-2xl text-copper"></i>
+                            <span
+                                class="font-bold text-xs uppercase tracking-widest text-slate-700 group-hover:text-copper">YouTube</span>
+                        </div>
+                        <i
+                            class="fas fa-arrow-right text-[10px] text-slate-300 group-hover:text-copper group-hover:translate-x-1 transition-all"></i>
+                    </a>
+
+                    <a href="#"
+                        class="flex items-center gap-5 p-6 premium-card bg-dark-slate border-none shadow-xl group">
+                        <div
+                            class="w-10 h-10 flex items-center justify-center btn-copper rounded-full text-white group-hover:rotate-12 transition-transform">
+                            <i class="fas fa-shopping-bag"></i>
+                        </div>
+                        <span
+                            class="font-bold text-xs uppercase tracking-widest text-slate-700 group-hover:text-copper">NOSSA
+                            LOJA NO MERCADO LIVRE</span>
+                    </a>
+
+
+                    <a href="https://shopee.com.br" target="_blank"
+                        class="flex items-center gap-6 p-8 premium-card bg-dark-slate border-none shadow-2xl group max-w-sm w-full no-underline">
+
+                        <!-- Ícone da Loja -->
+                        <div
+                            class="w-14 h-14 flex-shrink-0 flex items-center justify-center btn-copper rounded-full text-white group-hover:rotate-12 transition-transform duration-300 shadow-lg">
+                            <i class="fas fa-shopping-bag text-2xl"></i>
+                        </div>
+
+                        <!-- Coluna de Conteúdo: Texto e QR Code -->
+                        <div class="flex flex-col gap-4">
+                            <span
+                                class="font-bold text-xs uppercase tracking-[0.2em] text-black-400 group-hover:text-black transition-colors duration-300">
+                                CUPOM DE DESCONTO PARA NOSSA LOJA DA Shopee
+                            </span>
+
+                            <!-- QR Code com Moldura Personalizada -->
+                            <div class="qr-frame w-fit group-hover:scale-105 transition-transform duration-300">
+                                <img src="https://api.qrserver.com/v1/create-qr-code/?size=120x120&data=https://shopee.com.br"
+                                    alt="QR Code da Shopee" class="w-24 h-24 block"
+                                    onerror="this.src='https://via.placeholder.com/120?text=QR+Code'">
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+
+                <div class="pt-10 border-t border-copper/20">
+                    <p class="text-[9px] font-tech text-slate-400 uppercase tracking-widest mb-2">CONTATO</p>
+                    <a href="mailto:signature@seunome.com.br"
+                        class="text-lg font-serif italic text-slate-800 hover:text-copper transition-colors">contato@webmodas.piracaia.shop</a>
+                </div>
+
+
+            </div>
+
+            <div class="lg:col-span-8 space-y-20">
+
+                <div>
+                    <h3 class="font-tech text-[10px] text-BLACK-400 tracking-[0.3em] uppercase mb-8 italic">// CONHEÇA A
+                        NOSSA LOJA //</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <img src="https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?auto=format&fit=crop&w=600&q=80"
+                            class="w-full h-72 object-cover img-editorial shadow-sm" alt="Loja 1">
+                        <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=600&q=80"
+                            class="w-full h-72 object-cover img-editorial shadow-sm" alt="Loja 2">
+                        <img src="https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?auto=format&fit=crop&w=600&q=80"
+                            class="w-full h-72 object-cover img-editorial shadow-sm" alt="Loja 3">
+                    </div>
+                </div>
+
+                <div>
+
+                    <div class="pt-8">
+                        <h3 class="font-tech text-[10px] text-BLACK-400 tracking-[0.3em] uppercase mb-8 italic">// PEÇAS
+                            SELECIONADAS //</h3>
+                        <div class="relative w-full h-[500px] overflow-hidden rounded-[1.5rem] shadow-xl group"
+                            id="editorial-carousel">
+                            <div class="carousel-item active h-full">
+                                <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=1000&q=80"
+                                    class="w-full h-full object-cover img-editorial">
+                            </div>
+                            <div class="carousel-item h-full">
+                                <img src="https://images.unsplash.com/photo-1485230895905-ec40ba36b9bc?auto=format&fit=crop&w=1000&q=80"
+                                    class="w-full h-full object-cover img-editorial">
+                            </div>
+                            <div class="carousel-item h-full">
+                                <img src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                    class="w-full h-full object-cover img-editorial">
+                            </div>
+                            <div class="carousel-item h-full">
+                                <img src="https://images.unsplash.com/photo-1643286131725-5e0ad3b3ca02?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                    class="w-full h-full object-cover img-editorial">
+                            </div>
+                            <div
+                                class="absolute inset-y-0 w-full flex items-center justify-between px-6 opacity-0 group-hover:opacity-100 transition-opacity">
+                                <button onclick="moveSlide(-1)"
+                                    class="btn-nav hover:bg-copper hover:text-white transition-all">◀</button>
+                                <button onclick="moveSlide(1)"
+                                    class="btn-nav hover:bg-copper hover:text-white transition-all">▶</button>
+                            </div>
+                            <div
+                                class="absolute bottom-6 left-6 font-tech text-[9px] bg-dark-slate/80 text-gold px-4 py-2 backdrop-blur-md rounded-full tracking-widest">
+                                SIGNATURE COLLECTION // 2026
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+    </main>
+
+    <footer class="py-16 bg-dark-slate border-t border-copper/20 text-center">
+        <h4 class="font-serif italic text-white text-2xl mb-4">[ WEB MODAS ]</h4>
+        <div class="flex justify-center items-center gap-4 mb-8">
+            <div class="h-px w-12 bg-copper"></div>
+            <span class="font-tech text-[9px] text-gold tracking-[0.3em] uppercase">Maison & Digital Identity</span>
+            <div class="h-px w-12 bg-copper"></div>
+        </div>
+        <p class="text-[12px] text-black-500 uppercase tracking-widest"><strong>© 2026 Powered by [PIRACAIA.SHOP] •
+                IDENTIDADE.WEB3</strong></p>
+    </footer>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.carousel-item');
+
+        function moveSlide(direction) {
+            slides[currentSlide].classList.remove('active');
+            currentSlide = (currentSlide + direction + slides.length) % slides.length;
+            slides[currentSlide].classList.add('active');
+        }
+
+        setInterval(() => moveSlide(1), 6000);
+    </script>
+</body>
+
+</html>
