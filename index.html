@@ -88,18 +88,34 @@
         }
 
         @keyframes floating {
-            0% { transform: translate(0, 0) rotate(0deg) scale(1); }
-            100% { transform: translate(10%, 15%) rotate(20deg) scale(1.1); }
+            0% {
+                transform: translate(0, 0) rotate(0deg) scale(1);
+            }
+
+            100% {
+                transform: translate(10%, 15%) rotate(20deg) scale(1.1);
+            }
         }
 
         @keyframes slideLine {
-            from { transform: translateX(-100%) translateY(100%) rotate(-45deg); }
-            to { transform: translateX(100%) translateY(-100%) rotate(-45deg); }
+            from {
+                transform: translateX(-100%) translateY(100%) rotate(-45deg);
+            }
+
+            to {
+                transform: translateX(100%) translateY(-100%) rotate(-45deg);
+            }
         }
+
         /* --- FIM DA ANIMAÇÃO --- */
 
-        .font-tech { font-family: 'Michroma', sans-serif; }
-        .font-serif { font-family: 'Cormorant Garamond', serif; }
+        .font-tech {
+            font-family: 'Michroma', sans-serif;
+        }
+
+        .font-serif {
+            font-family: 'Cormorant Garamond', serif;
+        }
 
         .premium-card {
             background: rgba(255, 255, 255, 0.5);
@@ -127,33 +143,52 @@
         .btn-fashion::after {
             content: '';
             position: absolute;
-            top: 0; left: -100%;
-            width: 100%; height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
             transition: 0.6s;
         }
 
-        .btn-fashion:hover::after { left: 100%; }
+        .btn-fashion:hover::after {
+            left: 100%;
+        }
 
         .img-editorial {
             border-radius: 1.5rem;
             transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
         }
 
-        .img-editorial:hover { transform: scale(1.05); }
+        .img-editorial:hover {
+            transform: scale(1.05);
+        }
 
-        .carousel-item { display: none; }
-        .carousel-item.active { display: block; animation: slideIn 1s ease-out; }
+        .carousel-item {
+            display: none;
+        }
+
+        .carousel-item.active {
+            display: block;
+            animation: slideIn 1s ease-out;
+        }
 
         @keyframes slideIn {
-            from { opacity: 0; transform: translateX(30px); }
-            to { opacity: 1; transform: translateX(0); }
+            from {
+                opacity: 0;
+                transform: translateX(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
         }
     </style>
 </head>
 
 <body class="min-h-screen">
-    
+
     <div class="fashion-background">
         <div class="mesh-sphere sphere-1"></div>
         <div class="mesh-sphere sphere-2"></div>
@@ -167,27 +202,35 @@
 
             <div class="md:w-1/3 flex flex-col items-center">
                 <div class="relative group">
-                    <div class="absolute -inset-6 bg-rose-200 rounded-full blur-3xl opacity-50 group-hover:opacity-80 transition duration-1000"></div>
-                    <div class="relative w-64 h-64 bg-white rounded-full flex flex-col items-center justify-center p-8 border-4 border-double border-stone-200 shadow-2xl">
+                    <div
+                        class="absolute -inset-6 bg-rose-200 rounded-full blur-3xl opacity-50 group-hover:opacity-80 transition duration-1000">
+                    </div>
+                    <div
+                        class="relative w-64 h-64 bg-white rounded-full flex flex-col items-center justify-center p-8 border-4 border-double border-stone-200 shadow-2xl">
                         <svg viewBox="0 0 100 100" class="w-24 h-24 mb-3">
-                            <path d="M50 10 L85 30 V70 L50 90 L15 70 V30 Z" fill="none" stroke="#4a3728" stroke-width="1.5" />
+                            <path d="M50 10 L85 30 V70 L50 90 L15 70 V30 Z" fill="none" stroke="#4a3728"
+                                stroke-width="1.5" />
                             <path d="M50 25 L72 38 V62 L50 75 L28 38 V38 Z" fill="#ffafbd" opacity="0.8" />
                             <circle cx="50" cy="50" r="8" fill="#4a3728" />
                         </svg>
-                        <span class="text-deep-brown font-tech text-[10px] tracking-[0.5em] uppercase">Signature</span>
+                        <span class="text-deep-brown font-tech text-center text-[12px] tracking-[0.5em] uppercase">Web
+                            Modas Signature</span>
                     </div>
                 </div>
-                <h1 class="text-5xl font-serif italic text-deep-brown mt-12 tracking-tight">[ WEB MODAS ]</h1>
+                <h1 class="text-4xl font-tech text-center text-deep-brown mt-12 tracking-tight">ROUPAS E ACESSÓRIOS</h1>
             </div>
 
             <div class="md:w-2/3 text-center md:text-left">
-                <h2 class="text-xs font-tech text-light-brown tracking-[0.7em] uppercase mb-6">A MODA DIGITAL</h2>
+                <h2 class="text-xs font-tech text-light-brown tracking-[0.7em] uppercase mb-6">A NOVA MODA DIGITAL</h2>
                 <p class="text-4xl md:text-6xl text-deep-brown font-serif italic leading-[1] mb-10">
-                    Onde a precisão digital encontra a <br>
-                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-rose-400 to-orange-300 font-normal">alma da moda.</span>
+                    Onde a inovação digital encontra a <br>
+                    <span
+                        class="text-transparent bg-clip-text bg-gradient-to-r from-rose-400 to-orange-300 font-normal">alma
+                        da moda.</span>
                 </p>
-                <p class="text-stone-600 text-lg font-light mb-12 max-w-xl leading-relaxed border-l-4 border-rose-300 pl-8">
-                    A <strong>[ WEB MODAS ] Signature</strong> redefine a experiência de vestir. Nossa curadoria funde a
+                <p
+                    class="text-stone-600 text-lg font-light mb-12 max-w-xl leading-relaxed border-l-4 border-rose-300 pl-8">
+                    A <strong>WEB MODAS Signature</strong> redefine a experiência de vestir. Nossa curadoria funde a
                     atemporalidade da alta costura com a inovação da era conectada, criando peças que são extensões da
                     sua identidade.
                 </p>
@@ -200,8 +243,8 @@
                     </a>
                     <a href="https://www.google.com/maps/dir//Centro,+Piracaia+-+SP,+12970-000/@-23.0480556,-46.3621204,14z/data=!4m9!4m8!1m0!1m5!1m1!1s0x94cea3363199d857:0xbc562cec5d314d8!2m2!1d-46.3564707!2d-23.0538788!3e0?entry=ttu&g_ep=EgoyMDI2MDEyOC4wIKXMDSoASAFQAw%3D%3D"
                         target="_blank"
-                        class="flex-1 border-2 border-stone-300 text-deep-brown font-bold py-6 px-10 rounded-2xl hover:bg-white transition-all flex items-center justify-center gap-3 tracking-[0.2em] text-[11px] uppercase">
-                        <i class="fas fa-location-arrow text-xl"></i> NOSSA LOJA
+                        class="flex-1 btn-fashion font-bold py-6 px-10 rounded-2xl shadow-xl flex items-center justify-center gap-3 tracking-[0.2em] text-[11px] uppercase">
+                        <i class="fas fa-location-arrow text-xl"></i> ENCONTRE A NOSSA LOJA
                     </a>
                 </div>
             </div>
@@ -213,27 +256,51 @@
 
             <div class="lg:col-span-4 space-y-16">
                 <div>
-                    <h3 class="font-tech text-[10px] text-light-brown tracking-[0.4em] uppercase mb-8">NOSSOS CANAIS</h3>
+                    <h3 class="font-tech text-[10px] text-light-brown tracking-[0.4em] uppercase mb-8">NOSSOS CANAIS
+                    </h3>
                     <div class="space-y-6">
                         <a href="#" class="flex items-center justify-between p-8 premium-card group">
                             <div class="flex items-center gap-6">
-                                <i class="fab fa-instagram text-3xl text-rose-400 group-hover:rotate-12 transition-transform"></i>
+                                <i
+                                    class="fab fa-instagram text-3xl text-rose-400 group-hover:rotate-12 transition-transform"></i>
                                 <span class="font-bold text-xs uppercase tracking-widest">Instagram</span>
                             </div>
                             <i class="fas fa-arrow-right text-stone-300 group-hover:text-rose-400"></i>
                         </a>
 
-                        <a href="#" class="flex items-center gap-6 p-8 premium-card bg-stone-900 text-white border-none group">
-                            <div class="w-12 h-12 flex items-center justify-center bg-rose-400 rounded-full text-white">
-                                <i class="fas fa-shopping-bag"></i>
+                        <a href="#" class="flex items-center justify-between p-8 premium-card group">
+                            <div class="flex items-center gap-6">
+                                <i
+                                    class="fab fa-facebook text-3xl text-rose-400 group-hover:rotate-12 transition-transform"></i>
+                                <span class="font-bold text-xs uppercase tracking-widest">FACEBOOK</span>
                             </div>
-                            <span class="font-bold text-[10px] uppercase tracking-widest">MERCADO LIVRE</span>
+                            <i class="fas fa-arrow-right text-stone-300 group-hover:text-rose-400"></i>
                         </a>
 
-                        <a href="https://shopee.com.br" target="_blank" class="flex flex-col gap-8 p-10 premium-card bg-white border-rose-100">
+                        <a href="#" class="flex items-center justify-between p-8 premium-card group">
+                            <div class="flex items-center gap-6">
+                                <i
+                                    class="fab fa-youtube text-3xl text-rose-400 group-hover:rotate-12 transition-transform"></i>
+                                <span class="font-bold text-xs uppercase tracking-widest">Canal do YouTube</span>
+                            </div>
+                            <i class="fas fa-arrow-right text-stone-300 group-hover:text-rose-400"></i>
+                        </a>
+
+                                                <a href="#" class="flex items-center justify-between p-8 premium-card group">
+                            <div class="flex items-center gap-6">
+                                <i
+                                    class="fas fa-shopping-bag text-3xl text-rose-400 group-hover:rotate-12 transition-transform"></i>
+                                <span class="font-bold text-xs uppercase tracking-widest">Loja no Mercado Livre</span>
+                            </div>
+                            <i class="fas fa-arrow-right text-stone-300 group-hover:text-rose-400"></i>
+                        </a>
+
+
+                        <a href="https://shopee.com.br" target="_blank"
+                            class="flex flex-col gap-8 p-10 premium-card bg-white border-rose-100">
                             <div class="flex items-center gap-4">
                                 <i class="fas fa-tag text-rose-400 text-2xl"></i>
-                                <span class="font-bold text-[10px] uppercase tracking-widest">CUPOM SHOPEE</span>
+                                <span class="font-bold text-[10px] uppercase tracking-widest">CUPOM PARA COMPRA NA SHOPEE</span>
                             </div>
                             <div class="bg-stone-50 p-4 rounded-xl border-2 border-dashed border-rose-200 self-center">
                                 <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://shopee.com.br"
@@ -244,39 +311,91 @@
                 </div>
             </div>
 
+
             <div class="lg:col-span-8 space-y-24">
-                <div>
-                    <h3 class="font-tech text-[10px] text-light-brown tracking-[0.4em] uppercase mb-12 italic">// SHOWROOM //</h3>
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                        <img src="https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?auto=format&fit=crop&w=600&q=80"
-                            class="w-full h-80 object-cover img-editorial shadow-2xl" alt="Loja 1">
-                        <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=600&q=80"
-                            class="w-full h-80 object-cover img-editorial shadow-2xl md:mt-12" alt="Loja 2">
-                        <img src="https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?auto=format&fit=crop&w=600&q=80"
-                            class="w-full h-80 object-cover img-editorial shadow-2xl" alt="Loja 3">
-                    </div>
-                </div>
 
                 <div>
-                    <h3 class="font-tech text-[10px] text-light-brown tracking-[0.4em] uppercase mb-12 italic">// ÉDITORIAL //</h3>
-                    <div class="relative w-full h-[600px] overflow-hidden rounded-[3rem] shadow-2xl group" id="editorial-carousel">
-                        <div class="carousel-item active h-full">
-                            <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=1200" class="w-full h-full object-cover">
+                    <h3 class="font-tech text-[12px] text-light-brown tracking-[0.4em] uppercase mb-12 italic">
+                        <strong>// PROMOÇÕES DA SEMANA //</strong>
+                    </h3>
+
+                    <div>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                            <h3
+                                class="font-tech text-[12px] text-light-brown text-center tracking-[0.4em] uppercase mb-4">
+                                <strong>ITEM 01</strong>
+                            </h3>
+                            <h3
+                                class="font-tech text-[12px] text-light-brown text-center tracking-[0.4em] uppercase mb-4">
+                                <strong>ITEM 02</strong>
+                            </h3>
+                            <h3
+                                class="font-tech text-[12px] text-light-brown text-center tracking-[0.4em] uppercase mb-4">
+                                <strong>ITEM 03</strong>
+                            </h3>
                         </div>
-                        <div class="carousel-item h-full">
-                            <img src="https://images.unsplash.com/photo-1485230895905-ec40ba36b9bc?auto=format&fit=crop&w=1200" class="w-full h-full object-cover">
+
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                            <img src="https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?auto=format&fit=crop&w=600&q=80"
+                                class="w-full h-80 object-cover img-editorial shadow-2xl" alt="Loja 1">
+                            <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=600&q=80"
+                                class="w-full h-80 object-cover img-editorial shadow-2xl" alt="Loja 2">
+                            <img src="https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?auto=format&fit=crop&w=600&q=80"
+                                class="w-full h-80 object-cover img-editorial shadow-2xl" alt="Loja 3">
+
                         </div>
-                        
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                        
-                        <div class="absolute inset-y-0 w-full flex items-center justify-between px-10 opacity-0 group-hover:opacity-100 transition-all">
-                            <button onclick="moveSlide(-1)" class="w-14 h-14 bg-white rounded-full text-deep-brown shadow-xl hover:bg-rose-400 hover:text-white transition-all">◀</button>
-                            <button onclick="moveSlide(1)" class="w-14 h-14 bg-white rounded-full text-deep-brown shadow-xl hover:bg-rose-400 hover:text-white transition-all">▶</button>
+                        <br>
+                        <br>
+                        <br>
+
+
+                        <h3 class="font-tech text-[10px] text-light-brown tracking-[0.4em] uppercase mb-8 italic">
+                            <strong>// CONHEÇA A NOSSA LOJA //</strong>
+                        </h3>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                            <img src="https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?auto=format&fit=crop&w=600&q=80"
+                                class="w-full h-80 object-cover img-editorial shadow-2xl" alt="Loja 1">
+                            <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=600&q=80"
+                                class="w-full h-80 object-cover img-editorial shadow-2xl md:mt-8" alt="Loja 2">
+                            <img src="https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?auto=format&fit=crop&w=600&q=80"
+                                class="w-full h-80 object-cover img-editorial shadow-2xl" alt="Loja 3">
+                        </div>
+                    </div>
+
+                    <br>
+                    <br>
+                    <br>
+
+                    <div>
+                        <h3 class="font-tech text-[10px] text-light-brown tracking-[0.4em] uppercase mb-8 italic">
+                            <strong>// COLEÇÃO 2026 //</strong>
+                        </h3>
+                        <div class="relative w-full h-[600px] overflow-hidden rounded-[3rem] shadow-2xl group"
+                            id="editorial-carousel">
+                            <div class="carousel-item active h-full">
+                                <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=1200"
+                                    class="w-full h-full object-cover">
+                            </div>
+                            <div class="carousel-item h-full">
+                                <img src="https://images.unsplash.com/photo-1485230895905-ec40ba36b9bc?auto=format&fit=crop&w=1200"
+                                    class="w-full h-full object-cover">
+                            </div>
+
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                            </div>
+
+                            <div
+                                class="absolute inset-y-0 w-full flex items-center justify-between px-10 opacity-0 group-hover:opacity-100 transition-all">
+                                <button onclick="moveSlide(-1)"
+                                    class="w-14 h-14 bg-white rounded-full text-deep-brown shadow-xl hover:bg-rose-400 hover:text-white transition-all">◀</button>
+                                <button onclick="moveSlide(1)"
+                                    class="w-14 h-14 bg-white rounded-full text-deep-brown shadow-xl hover:bg-rose-400 hover:text-white transition-all">▶</button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
     </main>
 
     <footer class="py-24 bg-white/50 backdrop-blur-xl border-t border-stone-200 text-center relative z-10">
@@ -294,7 +413,7 @@
         const slides = document.querySelectorAll('.carousel-item');
 
         function moveSlide(direction) {
-            if(slides.length === 0) return;
+            if (slides.length === 0) return;
             slides[currentSlide].classList.remove('active');
             currentSlide = (currentSlide + direction + slides.length) % slides.length;
             slides[currentSlide].classList.add('active');
