@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>PIRACAIA.SHOP | SUA PRESENÇA DIGITAL NA WEB</title>
+    <meta name="description" content="Garanta sua PRESENÇA DIGITAL em PIRACAIA e região. O App PIRACAIA.SHOP conecta seu comércio local ás tecnologias WEB2 e WEB3, Cartões de Visitas Digital e Interativos, One Pages e Landing pages exclusivas.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.PIRACAIA.SHOP">
+
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Cpath d='M24 4L41.3 14V34L24 44L6.7 34V14L24 4Z' fill='none' stroke='%2322d3ee' stroke-width='2'/%3E%3Crect x='17' y='17' width='14' height='14' rx='2' fill='%23f97316'/%3E%3C/svg%3E">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Michroma&family=JetBrains+Mono:wght@300;500&display=swap" rel="stylesheet">
+    
+    <style>
+        :root { --cyan: #22d3ee; --orange: #f97316; --dark: #2d2f32; }
+        body { 
+            font-family: 'JetBrains Mono', monospace; 
+            background-color: var(--dark); 
+            color: #e6edf3; 
+            margin: 0;
+            overflow-x: hidden;
+        }
+        h1, h2, h3, .font-tech { font-family: 'Michroma', sans-serif; text-transform: uppercase; }
+        #bg-canvas { position: fixed; top: 0; left: 0; z-index: -1; opacity: 0.3; }
+        
+        .cyber-card {
+            background: rgba(13, 17, 23, 0.8);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(34, 211, 238, 0.1);
+            clip-path: polygon(0 0, 95% 0, 100% 12%, 100% 100%, 5% 100%, 0 88%);
+        }
+        
+        .btn-action {
+            background: var(--orange);
+            color: rgb(0, 0, 0);
+            font-family: 'Michroma';
+            font-size: 11px;
+            letter-spacing: 2px;
+            transition: all 0.3s ease;
+            box-shadow: 0 0 15px rgba(249, 115, 22, 0.4);
+        }
+        .btn-action:hover { background: var(--cyan); box-shadow: 0 0 25px var(--cyan); transform: scale(1.05); }
+
+        /* Scrollbar personalizada para não estragar o visual */
+        ::-webkit-scrollbar { width: 4px; }
+        ::-webkit-scrollbar-track { background: var(--dark); }
+        ::-webkit-scrollbar-thumb { background: var(--orange); }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col justify-between">
+
+    <canvas id="bg-canvas"></canvas>
+
+    <header class="p-4 md:p-8 max-w-7xl w-full mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+        <div class="flex items-center">
+            <svg class="w-8 h-8 md:w-10 md:h-10 mr-4 shrink-0" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <filter id="glow" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="2" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+                <path d="M24 4L41.3205 14V34L24 44L6.67949 34V14L24 4Z" stroke="#22d3ee" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <rect x="17" y="17" width="14" height="14" rx="2" fill="#f97316" filter="url(#glow)"/>
+            </svg>
+            <div class="flex flex-col leading-none">
+                <span class="text-lg md:text-xl font-tech tracking-tighter text-white">[ PIRACAIA.SHOP ]</span>
+                <span class="text-[8px] md:text-[10px] font-tech text-orange-500 tracking-[0.1em] md:tracking-[0.3em]">PRESENÇA DIGITAL EM PIRACAIA E REGIÃO</span>
+            </div>
+        </div>
+        <div class="text-[9px] text-cyan-400 font-tech border border-cyan-400/30 px-3 py-1">
+            NODE_STATUS: [www.piracaia.shop]
+        </div>
+    </header>
+
+    <main class="flex-grow flex flex-col justify-center items-center px-4 md:px-6 text-center py-8">
+        <div class="inline-block px-4 py-2 border border-orange-500/30 rounded text-[10px] md:text-[18px] text-orange-500 mb-6 uppercase tracking-[0.1em] md:tracking-[0.3em] max-w-full">
+            SUA IDENTIDADE DIGITAL: WWW.SEUNOME.piracaia.shop
+        </div>
+        
+        <h1 class="text-2xl md:text-6xl font-tech leading-tight mb-6 px-2">
+            PRESENÇA DIGITAL <br class="hidden md:block"> <span class="text-orange-500 text-glow">ACESSÍVEL AO SEU NEGÓCIO</span>
+        </h1>
+
+        <div class="text-slate-400 text-[11px] md:text-sm leading-relaxed mb-8 max-w-5xl mx-auto uppercase tracking-[0.05em] px-2">
+            O App <span class="text-cyan-400 md:text-[18px]">[ www.piracaia.shop ]</span> coloca seu negócio nas pesquisas do <span class="text-yellow-200 md:text-[22px]">Google</span> na nossa região. 
+            Seu cartão digital completo sendo mostrado nas buscas: Número de <span class="text-green-600 md:text-[22px]">WhatsApp</span> com mensagem via Web, seu  
+            <span class="text-pink-600 md:text-[22px]">Instagram</span>, página do <span class="text-blue-600 md:text-[22px]">Facebook</span>, canal do 
+            <span class="text-red-600 md:text-[22px]">YouTube</span> e todas outras mídias sociais.
+            <br class="hidden md:block">
+            Também seus links do <span class="text-orange-600 md:text-[16px]">MEPE Food, Anota.ai, PediZap, etc...</span>.
+            Tenha seu e-mail profissional [ SEUNOME@piracaia.shop ] e proteja sua marca.
+        </div>
+
+        <p class="text-orange-600 text-[12px] md:text-[18px] font-bold mb-8 uppercase px-4">
+            INCLUSÃO + PRESENÇA digital descomplicada e ascessível, por menos de 0,70 por dia !!
+            <a href="google_bucas.html" class="text-cyan-500 hover:text-orange-500 transition-colors">Saiba Mais...</a>
+        </p>
+
+        <a href="https://wa.me/+5511933924115" class="btn-action px-8 md:px-16 py-4 inline-block rounded-sm text-[10px] md:text-xs">
+            ENTRE EM CONTATO PELO WHATSAPP !
+        </a>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-6 mt-6 w-full max-w-6x1">
+            <div class="cyber-card p-6">
+                <h3 class="text-[12px] md:text-[18px] mb-2 text-orange-500 font-tech">#1 GOOGLE BUSCAS</h3>
+                <p class="text-[11px] md:text-[14px] text-white font-mono uppercase">Seja encontrado nos resultados de pesquisas do Google e de toda a Web em Piracaia e Região</p>
+                <p class="text-[11px] md:text-[12px] text-white font-mono uppercase mt-6"></p>
+                
+                <a href="google_bucas.html" 
+                class="btn-action px-8 md:px-16 py-2 inline-block rounded-sm text-[14px] md:text-xs font-mono uppercase transition-all">
+                Saiba Mais...
+                </a>
+                
+            </div>
+            <div class="cyber-card p-6 border-cyan-500/30">
+                <h3 class="text-[12px] md:text-[18px] mb-2 text-cyan-400 font-tech">#2 IDENTIDADE DIGITAL</h3>
+                <p class="text-[11px] md:text-[14px] text-white font-mono uppercase">www.SEUNOME.piracaia.shop | IDENTIDADE PROFISSIONAL - SEU CARTÃO DIGITAL NA WEB</p>
+                 <p class="text-[11px] md:text-[12px] text-white font-mono uppercase mt-6"></p>
+                
+                <a href="https://www.automacel.com" 
+                class="btn-action px-8 md:px-16 py-2 inline-block rounded-sm text-[14px] md:text-xs font-mono uppercase transition-all">
+                Saiba Mais...
+                </a>
+            </div>
+
+            <div class="cyber-card p-6">
+                <h3 class="text-[12px] md:text-[18px] mb-2 text-cyan-500 font-tech">#3 IDENTIDADE TEMPORÁRIA</h3>
+                <p class="text-[11px] md:text-[14px] text-white font-mono uppercase">Festa ou Evento ? SEU CONVITE DIGITAL | www.SEUEVENTO.piracaia.shop</p>
+                   <p class="text-[11px] md:text-[12px] text-white font-mono uppercase mt-6"></p>
+                
+                <a href="https://www.automacel.com" 
+                class="btn-action px-8 md:px-16 py-2 inline-block rounded-sm text-[14px] md:text-xs font-mono uppercase transition-all">
+                Saiba Mais...
+                </a>
+
+              
+        </div>
+    </main>
+
+    <footer class="p-6 md:p-8 border-t border-white/5 text-center text-[7px] md:text-[9px] font-tech text-white/60 tracking-[0.1em] md:tracking-[0.4em] leading-loose">
+        [PIRACAIA.SHOP] // POWERED BY WWW.IDENTIDADEWEB3.COM.BR <br class="md:hidden">
+        © 2026 FELIPE CAMPOS // 
+        <a href="mailto:atendimento@automacel.com" class="text-cyan-500 hover:text-orange-500 transition-colors">ATENDIMENTO@AUTOMACEL.COM</a>
+    </footer>
+
+    <script>
+        const canvas = document.getElementById('bg-canvas');
+        const ctx = canvas.getContext('2d');
+        let points = [];
+        function init() {
+            canvas.width = window.innerWidth; canvas.height = window.innerHeight;
+            points = Array.from({length: window.innerWidth < 768 ? 20 : 45}, () => ({
+                x: Math.random() * canvas.width, y: Math.random() * canvas.height,
+                vx: (Math.random() - 0.5) * 0.25, vy: (Math.random() - 0.5) * 0.25
+            }));
+        }
+        function draw() {
+            ctx.clearRect(0,0,canvas.width, canvas.height);
+            ctx.strokeStyle = "rgba(34, 211, 238, 0.08)";
+            ctx.fillStyle = "rgba(34, 211, 238, 0.35)";
+            points.forEach((p, i) => {
+                p.x += p.vx; p.y += p.vy;
+                if(p.x < 0 || p.x > canvas.width) p.vx *= -1;
+                if(p.y < 0 || p.y > canvas.height) p.vy *= -1;
+                ctx.fillRect(p.x, p.y, 1.2, 1.2);
+                for(let j=i+1; j<points.length; j++) {
+                    let p2 = points[j];
+                    let dist = Math.hypot(p.x - p2.x, p.y - p2.y);
+                    if(dist < 160) {
+                        ctx.lineWidth = 1 - dist/160;
+                        ctx.beginPath(); ctx.moveTo(p.x, p.y); ctx.lineTo(p2.x, p2.y); ctx.stroke();
+                    }
+                }
+            });
+            requestAnimationFrame(draw);
+        }
+        window.onresize = init; init(); draw();
+    </script>
+</body>
+</html>
